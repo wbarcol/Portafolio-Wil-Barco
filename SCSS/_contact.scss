@@ -1,0 +1,32 @@
+
+/* CONTACT */
+
+  .fondoFor{
+    background-image: url(../imag/iportafolio/i17.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-fluid{
+height: calc(100vh - 124px);
+align-items: center;
+display: grid;
+}
+
+.col-6{
+text-align: center;
+background-color: $grisfondo;
+padding: 20px;
+border-radius: 20px;
+}
+
+.col-6 {
+h2{
+font-family: $letratexto;
+color: white;
+}
+}
+

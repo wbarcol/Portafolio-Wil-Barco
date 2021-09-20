@@ -1,0 +1,22 @@
+$colorgris: #455054;
+$grisfondo:rgba(71, 71, 71, 0.9);
+$letramenu: 'Roboto', sans-serif;
+$letralogo: 'Cinzel Decorative', cursive;
+$letratexto: 'Nunito', sans-serif;
+
+@import "menu";
+@import "home";
+@import "about";
+@import "portafolio";
+@import "blog";
+@import "contact";
+@import "footers";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none;
+    box-sizing: border-box;
+}

@@ -1,0 +1,155 @@
+    /* MENU */
+
+    
+    nav {
+        a{
+        color: white;
+        font-family: $letramenu;
+        font-size: 15px;
+        display: block;
+        height: 50px;
+        padding: 15px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+}
+
+    a:hover{
+        color: white;
+    }
+    
+    .navPage{
+        ul{
+        margin-top: 0;
+        margin-bottom: 0;
+        }
+    }
+
+    .ulmenu{
+        li{
+        display: inline-block;
+        }
+    }
+
+    .ulmenu {
+        li:hover{
+        background: rgba(0, 0, 0, 0.3);
+        }
+    }
+    
+
+/* Menu PAGE */
+
+.headerPage{
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+
+.barra{
+background-color: $colorgris;
+width: 100%;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.logo{
+color: white;
+font-family: $letralogo;
+margin-left: 70px;
+margin-bottom: 0;
+margin-top: 0;
+font-size: 30px;
+
+}
+
+.checkboton{
+font-size: 30px;
+color:white;
+margin-right: 10px;
+cursor: pointer;
+display: none;
+
+}
+
+#check{
+display: none;
+}
+
+.navPage{
+display: flex;
+align-items: center;
+}
+
+.boton{
+display: flex;
+align-items: center;
+}
+
+     /* Menu Para tablets */
+
+@media (max-width: 991px){
+.logo{
+    margin-left: 20px;
+}
+
+.ulmenu {
+    li{
+        a {
+        font-size: 12px;
+        }
+        }
+    }
+
+}
+
+        /* Menu Para celulares */
+
+@media (max-width: 767px){
+.checkboton{
+    display: block;
+}
+
+.menuPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    background: $grisfondo;
+    top: 60px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.ulmenu {
+    li{
+display: none;
+padding: 10px;
+    }
+}
+
+.ulmenu {
+    li {
+         a{
+font-size: 20px;
+}
+    }
+}
+
+#check:checked ~ .menuPage{
+height: calc(100vh - 60px);
+}
+
+#check:checked ~ .menuPage .ulmenu li{
+display: block;
+}
+
+}

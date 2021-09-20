@@ -1,0 +1,18 @@
+@mixin footer($coloricono: white){
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    a{
+        color:$coloricono;
+    }
+}
+
+.footerPrincipal{
+    @include footer;
+}
+
+
+.footerPages{
+    @include footer ($coloricono: #455054);
+    }
+
